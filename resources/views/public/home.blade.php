@@ -6,14 +6,14 @@
  
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="https://cf.bstatic.com/data/xphoto/1182x887/217/21775845.jpg?size=S" class="d-block w-100" alt="...">
+      <img src="https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
       <img src="https://www.princehotels.com/tokyo/wp-content/uploads/sites/9/2019/06/tokyo-prince-hotel-dining-Shimizu_1-1.jpg" class="d-block w-100" alt="...">
     </div>
     
     <div class="carousel-item">
-      <img src="https://www.boutiquehotelnews.com/media/3615/schermafbeelding-2019-10-28-om-15-57-16.png?anchor=center&mode=crop&width=1910&height=1000&rnd=132167518600000000" class="d-block w-100" alt="...">
+      <img src="https://media.istockphoto.com/id/492189224/photo/seaview-bedroom.jpg?s=612x612&w=0&k=20&c=tSL5OoSdxW3l7WzdBGU2_NnGNjDH88twjNZTTkll2jY=" class="d-block w-100" alt="...">
     </div>
     
   </div>
@@ -40,7 +40,7 @@
             <div class="col-lg-4 mb-3">
               <a href="{{route('room_type',['id'=>$type->id])}}" class="text-decoration-none text-dark">
                 <div class="card bg-dark text-light mb-3">
-                  <img src="{{url('upload/'.$type->image)}}" class="card-img" alt="..." height="250">
+                  <img src="{{ $type->image }}" class="card-img" alt="..." height="250">
                   <div class="card-img-overlay" style="background: rgba(0, 0, 0, 0.5)">
                     <h5 class="card-title mt-5">{{$type->name}}</h5>
                     
@@ -77,7 +77,7 @@
           @foreach ($room_type as $type)
           <div class="col-lg-3 mb-3">
               <div class="card bg-dark text-light mb-3">
-                <img src="{{url('upload/'.$type->image)}}" class="card-img" alt="..." height="200">
+                <img src="{{ $type->image }}" class="card-img" alt="..." height="200">
               </div>
               </div>
           @endforeach

@@ -13,6 +13,6 @@ class HotelSeeder extends Seeder
      */
     public function run()
     {
-        //
+        \App\Models\Hotel::factory(10)->create();
     }
 }

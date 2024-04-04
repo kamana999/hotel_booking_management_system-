@@ -5,7 +5,7 @@
         <div class="row">
            
             <div class="card bg-dark text-light ">
-                <img src="{{url('upload/'.$room_type->image)}}" alt="" height="500vh" width="100%">
+                <img src="{{asset($room_type->image)}}" alt="" height="500vh" width="100%">
                 <div class="card-img-overlay" style="background: rgba(0, 0, 0, 0.5)"></div>
             </div>
             

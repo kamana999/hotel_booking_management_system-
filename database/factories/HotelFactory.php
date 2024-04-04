@@ -23,6 +23,15 @@ class HotelFactory extends Factory
     {
         return [
             //
+            'name' => $this->faker->name,
+            'about' => $this->faker->text,
+            'image' => $this->faker->imageUrl(),
+            'address' => $this->faker->address,
+            'address2' => $this->faker->address,
+            'contact' => $this->faker->numberBetween(1000, 9999),
+            'city' => $this->faker->city,
+            'state' => $this->faker->state,
+            'zipcode' => $this->faker->postcode,
         ];
     }
 }

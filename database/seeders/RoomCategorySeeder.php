@@ -13,6 +13,7 @@ class RoomCategorySeeder extends Seeder
      */
     public function run()
     {
-        //
+        //  App\Model\RoomCategory::factory(10)->create();
+        \App\Models\RoomCategory::factory(10)->create();
     }
 }

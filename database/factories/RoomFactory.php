@@ -23,6 +23,9 @@ class RoomFactory extends Factory
     {
         return [
             //
+            'description' => $this->faker->text,
+            'room_type' => $this->faker->numberBetween(1, 10),
+            'room_number' => $this->faker->numberBetween(100, 300),
         ];
     }
 }
